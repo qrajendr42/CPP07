@@ -10,8 +10,11 @@ int main()
     Array<int> b = a;
     b[0] = 42;
 
-    std::cout << "a[0] = " << a[0] << std::endl;
-    std::cout << "b[0] = " << b[0] << std::endl;
+    std::cout << "a[2] = " << a[2] << std::endl;
+    std::cout << "b[2] = " << b[0] << std::endl;
+
+    b[2] = 42;
+    std::cout << "b[2] replaced with 42 = " << b[2] << std::endl;
 
     Array<std::string> s(2);
     s[0] = "hello";
@@ -20,7 +23,7 @@ int main()
 
     try
     {
-        std::cout << a[42] << std::endl;
+        std::cout << a[6] << std::endl;
     }
     catch(const std::exception& e)
     {
