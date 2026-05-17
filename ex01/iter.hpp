@@ -10,7 +10,7 @@ void    printElement(const T &elem)
     std::cout << elem << std::endl;
 }
 
-// non-const array, non-const function
+// non-const array + function that can modify elements
 template <typename T>
 void    iter(T array[], size_t length, void (*func)(T &))
 {
@@ -18,7 +18,7 @@ void    iter(T array[], size_t length, void (*func)(T &))
         func(array[i]);
 }
 
-// const array, const function
+// const array _ function that cannot modify elements
 template <typename T>
 void iter(const T array[], size_t length, void (*func)(const T &))
 {
