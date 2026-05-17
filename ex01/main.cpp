@@ -7,9 +7,16 @@ int main()
 
     std::cout << "Int array:" << std::endl;
     iter(arrInt, 5, printElement);
+    std::cout << " " << std::endl;
 
     std::cout << "String array:" << std::endl;
     iter(arrStr, 3, printElement);
+    std::cout << " " << std::endl;
+
+    const int constArr[3] = {10, 20, 30};
+
+    std::cout << "Const int array:" << std::endl;
+    iter(constArr, 3, printElement);
 
     return (0);
 }
